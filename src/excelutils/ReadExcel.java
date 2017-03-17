@@ -62,7 +62,7 @@ public class ReadExcel {
 		HashMap<String, String> map = mydata.get(0);
 		for (Entry<String, String> entry : map.entrySet()) {
 
-			if (entry.getKey().equalsIgnoreCase("company")) {
+			if (entry.getKey().equalsIgnoreCase("Name")) {
 				System.out.println(entry.getValue());
 		}
 		}
