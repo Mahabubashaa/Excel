@@ -50,29 +50,21 @@ public class ReadExcel {
 				case Cell.CELL_TYPE_STRING:
 					currentHash.put(HeaderRow.getCell(j).getStringCellValue(),
 							currentCell.getStringCellValue());
-
 					break;
 				case Cell.CELL_TYPE_NUMERIC:
 					currentHash.put(HeaderRow.getCell(j).getStringCellValue(),String.valueOf(currentCell.getNumericCellValue()));
-
 					break;
 				}
-
 			}
-
 			mydata.add(currentHash);
 		}
-
 		System.out.println(mydata);
-
 		HashMap<String, String> map = mydata.get(0);
 		for (Entry<String, String> entry : map.entrySet()) {
 
 			if (entry.getKey().equalsIgnoreCase("company")) {
 				System.out.println(entry.getValue());
-			}
-
 		}
-
+		}
 	}
 }
