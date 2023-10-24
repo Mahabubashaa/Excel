@@ -15,7 +15,7 @@ public class ReadExcel {
 
 	public static void main(String[] args) throws IOException {
 
-		String path = "D:\\Arunsundar\\Docs\\work.xls";
+		String path = "D:\\Mahabu\\Docs\\work.xls";
 		FileInputStream fin = new FileInputStream(path);
 
 		HSSFWorkbook book = new HSSFWorkbook(fin);
